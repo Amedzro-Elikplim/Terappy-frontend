@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+ 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.footer {
+  background-image:url(./utils/svg/Wave.svg);
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
