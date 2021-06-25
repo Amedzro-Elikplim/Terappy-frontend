@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
  
 html, body {
@@ -28,5 +29,13 @@ body {
   cursor: pointer;
   box-shadow: 0px 0px 5px silver;
 }
+
+.phone-icon {
+  zoom: 2;
+}
  
+.explore-icon {
+  color: #380675;
+  margin: 0px 10px;
+}
 

@@ -1,9 +1,9 @@
 
 import styled from "styled-components";
 import { primaryColor } from "../../utils/color/Color";
-const NavButton = (props) => {
+const NavButton = ({className}) => {
     return(
-        <StyledButton>{props.children}</StyledButton>
+        <StyledButton className={className}>Contact Us</StyledButton>
     )
 }
 
@@ -15,7 +15,7 @@ const StyledButton = styled.button`
      border: none;
      color: ${primaryColor};
      outline: none;
-     box-shadow: 0px 0px 10px silver;
+     box-shadow: 0px 0px 5px silver;
      background-color: white;
      font-family: Kurale;
      font-size: large;
@@ -24,7 +24,6 @@ const StyledButton = styled.button`
      font-weight: bolder;
 
      
-
      &:hover {
         background-color: ${primaryColor};
         color: white;

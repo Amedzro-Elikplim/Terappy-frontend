@@ -31,6 +31,9 @@ const Nav = () => {
         const isMobile = useMediaQuery({maxWidth: 698});
         return isMobile ? children : null
     }
+ 
+
+  
 
 
     return(
@@ -39,7 +42,7 @@ const Nav = () => {
             <Desktop>
                 <Logo />
                 <Navlinks />
-                <NavButton children={"Contact Us"} />
+                <NavButton />
             </Desktop>
             
             <Mobile>
@@ -51,9 +54,9 @@ const Nav = () => {
         <Mobile>
             {state.dropMenu ?
                <NavDropdown>
-                   
+                   <NavLinksDropdown />
+                   <DropdownNavButton  />
                </NavDropdown>
-                // <Navlinks className="dropdown-nav" />
                :
                null
             }
@@ -69,16 +72,28 @@ export default Nav;
 const StyledNav = styled.nav`
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 15px 40px;
     box-shadow: 0px 0px 10px silver;
     align-items: center;
     flex-wrap: nowrap;
+    width: 100%;
 `
 
 const NavDropdown = styled.div`
    width: 100vw;
-   height: 150px;
 `
+
+const NavLinksDropdown = styled(Navlinks)`
+    display: flex;
+    flex-direction: column;
+`
+
+const DropdownNavButton = styled(NavButton)`
+    margin: 10px 40px;
+    padding: 5px;
+`
+
+
  
      
 
