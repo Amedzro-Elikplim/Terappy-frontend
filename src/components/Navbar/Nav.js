@@ -77,7 +77,7 @@ const StyledNav = styled.nav`
 
 const NavDropdown = styled.div`
    width: 100vw;
-   height: 200px;
+   height: 150px;
 `
  
      
