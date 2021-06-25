@@ -1,19 +1,65 @@
+import { useState } from 'react';
 import Logo from "./Logo"
 import NavButton from "./NavButton"
-import Navlinks from "./Navlinks"
+import Navlinks  from "./Navlinks"
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
+import {FcMenu} from 'react-icons/fc'
 
 
 
 const Nav = () => {
 
+    const [state, setState] = useState({
+        state : {
+            dropMenu: false
+        }
+    })
+
+    const toggleMenu = () => {
+        const {dropMenu} = state;
+        if(dropMenu) return setState({dropMenu: false});
+        setState({dropMenu: true})
+    }
+
+    const Desktop = ({children}) => {
+        const isDesktop = useMediaQuery({minWidth: 699});
+        return isDesktop ? children : null
+    }
+
+    const Mobile = ({children}) => {
+        const isMobile = useMediaQuery({maxWidth: 698});
+        return isMobile ? children : null
+    }
+
 
     return(
+        <div>
         <StyledNav>
-            <Logo />
-            <Navlinks />
-            <NavButton children={"Contact Us"} />
+            <Desktop>
+                <Logo />
+                <Navlinks />
+                <NavButton children={"Contact Us"} />
+            </Desktop>
+            
+            <Mobile>
+                <Logo />
+                <FcMenu onClick={toggleMenu} className="menu-icon"/>
+            </Mobile>
         </StyledNav>
+        
+        <Mobile>
+            {state.dropMenu ?
+               <NavDropdown>
+                   
+               </NavDropdown>
+                // <Navlinks className="dropdown-nav" />
+               :
+               null
+            }
+        </Mobile>
+        
+        </div>
     )
 }
 
@@ -28,5 +74,13 @@ const StyledNav = styled.nav`
     align-items: center;
     flex-wrap: nowrap;
 `
+
+const NavDropdown = styled.div`
+   width: 100vw;
+   height: 200px;
+`
+ 
+     
+
 
 

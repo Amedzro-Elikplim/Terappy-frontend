@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { primaryColor } from '../../utils/color/Color';
 const Navlinks = () => {
     return(
@@ -19,12 +19,19 @@ const StyledUnorderedList = styled.ul`
     width: 50vw;
     justify-content: space-evenly;
     font-family: Kurale;
+
+    ${props => props.dropdown && css`
+        flex-direction: column;
+    `}
 `
 
 const Links = styled.li`
     cursor: pointer;
 
+   
     &:hover {
         color: ${primaryColor};
     }
 `
+
+ 
