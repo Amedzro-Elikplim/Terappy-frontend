@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
-const ServiceCard = ({children,className}) => {
+const ServiceCard = (props) => {
 
     return(
-        <Card className = {className}>
-            <Title>{children}</Title>
+        <Card>
+            <Title>{props.title}</Title>
         </Card>
     )
 }
@@ -20,6 +20,9 @@ const Card = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-wrap: wrap;
+   flex: 1 1 200px;
+   margin: 20px;
     
 
    &:hover {

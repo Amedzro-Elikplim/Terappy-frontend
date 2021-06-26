@@ -1,5 +1,6 @@
 import { ImClubs } from 'react-icons/im';
-import { SiActigraph, SiJusteat, SiMonzo  } from 'react-icons/si'
+import { FaUser, FaHeart, FaPodcast, FaBlogger } from 'react-icons/fa'
+import { SiActigraph, SiJusteat, SiMonzo, } from 'react-icons/si'
 
 const data = [
     {
@@ -10,6 +11,21 @@ const data = [
     },
     {
         title: "Divorce"
+    },
+    {
+        title: "Addiction"
+    },
+    {
+        title: "Suicidal thoughts"
+    },
+    {
+        title: "Stress"
+    },
+    {
+        title: "Marriage"
+    },
+    {
+        title: "Anxiety"
     }
 ];
 
@@ -18,6 +34,10 @@ const exploreData = [
     {icon: <SiActigraph />, text: "Join our gym"},
     {icon: <SiJusteat />, text: "Eat Healthy shop" },
     {icon: <SiMonzo />, text: "Tour our marketplace" },
+    {icon: <FaUser />, text: "Volunteer" },
+    {icon: <FaHeart />, text: "Meet New People"},
+    {icon: <FaPodcast />, text: "Listen to our podcasts" },
+    {icon: <FaBlogger />, text: "Blog" },
     // {text: "Join the gym"}
 ];
 

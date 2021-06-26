@@ -20,6 +20,9 @@ const Card = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   flex: 1 1 200px;
+   margin: 10px;
+   cursor: pointer;
 
    &:hover{
        color: orangered;

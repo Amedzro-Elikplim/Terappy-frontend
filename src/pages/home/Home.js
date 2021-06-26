@@ -7,7 +7,7 @@ import Products from "../../components/sections/home-sections/Products";
 const Home = () => {
     return(
         <div className="container">
-            <Nav />
+             <Nav />
              <Hero />
              <Services />
              <Products />

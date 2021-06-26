@@ -65,7 +65,6 @@ const StyledSection = styled.section`
    display: flex;
    justify-content: space-between;
    background-image: linear-gradient(aliceblue, white);
-   height: 50vh;
 `
 
 const HeroText = styled.h1`
@@ -73,7 +72,7 @@ const HeroText = styled.h1`
   text-align: center;
   font-size: 4rem;
   color: #242222;
-  padding: 10px;
+  padding: 15px;
 `
 
 const HeroDiv = styled.div`
@@ -87,7 +86,7 @@ const HeroDiv = styled.div`
 const StyledQuote = styled.p`
    font-family: Raleway;
    font-weight: bolder;
-   padding: 5px;
+   padding: 15px;
 `
 
 const StyledButton = styled.button`

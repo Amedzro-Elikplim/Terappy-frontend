@@ -70,9 +70,11 @@ export default Nav;
 
 
 const StyledNav = styled.nav`
+    height: 10vh;
     display: flex;
+    margin: 0px;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 15px 25px;
     box-shadow: 0px 0px 10px silver;
     align-items: center;
     flex-wrap: nowrap;
@@ -86,6 +88,7 @@ const NavDropdown = styled.div`
 const NavLinksDropdown = styled(Navlinks)`
     display: flex;
     flex-direction: column;
+    padding-left: 35px;
 `
 
 const DropdownNavButton = styled(NavButton)`
