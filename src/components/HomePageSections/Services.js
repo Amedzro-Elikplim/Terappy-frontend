@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ServiceCard from "./ServiceCard";
-import {data} from "../../../utils/Data/data";
+import { servicesData } from "../../utils/data/data";
 
 const Services = () => {
    
@@ -8,7 +8,7 @@ const Services = () => {
         <div>
             <ServicesSection>
                 {
-                    data.map((item, key) => {
+                    servicesData.map((item, key) => {
                     return  <ServiceCard key={key} title={item.title} />
                     })
                 }

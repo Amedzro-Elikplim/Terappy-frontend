@@ -1,4 +1,6 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { primaryFont } from "../../utils/fonts/font";
+import { servicesFontColor } from "../../utils/color/Color";
 
 const ServiceCard = (props) => {
 
@@ -33,8 +35,8 @@ const Card = styled.div`
 
 const Title = styled.h3`
    padding: 10px;
-   color: #b8bcc0;
-   font-family: Raleway;
+   color: ${servicesFontColor};
+   font-family: ${primaryFont};
 `
 
 

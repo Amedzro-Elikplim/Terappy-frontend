@@ -1,7 +1,9 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { MdExplore } from 'react-icons/md';
-import { exploreData } from '../../../utils/Data/data';
+import { exploreData } from '../../utils/data/data';
 import ExploreCard from './ExploreCard';
+import { titleTextColor } from '../../utils/color/Color';
+import { primaryFont } from '../../utils/fonts/font';
 
 const Products = () => {
 
@@ -31,8 +33,8 @@ const ExploreSection = styled.section`
 
 const ExploreSectionTitle = styled.div`
     font-size: 4rem;
-    color: #242222;
-    font-family: Raleway;
+    color: ${titleTextColor};
+    font-family: ${primaryFont};
     font-weight: bolder;
     display: flex;
     justify-content: center;
@@ -45,12 +47,5 @@ const ExploreDiv = styled.div`
   margin: 30px 0px;
   display: flex;
   flex-wrap: wrap;
-
-  ${props => props.mobile && css`
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 90vw;
-  `}
 `
 

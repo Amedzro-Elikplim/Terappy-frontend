@@ -11,7 +11,7 @@
 }
 
 .footer {
-  background-image:url(./utils/svg/Wave.svg);
+  background-image:url(./utils/blobs/Wave.svg);
   min-height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,5 +30,10 @@
 .explore-icon {
   color: #380675;
   margin: 0px 10px;
+  cursor: pointer;
+}
+
+.explore-icon:hover {
+  transform: rotate(50deg);
 }
 

@@ -1,8 +1,9 @@
-import Blob from "../../../utils/blobs/Blob";
+import Blob from "../../utils/blobs/Blob";
 import styled from "styled-components";
-import { primaryColor } from "../../../utils/color/Color";
+import { primaryColor, titleTextColor } from "../../utils/color/Color";
 import { useMediaQuery } from "react-responsive";
-import { FiPhoneCall } from 'react-icons/fi'
+import { FiPhoneCall } from 'react-icons/fi';
+import { primaryFont } from "../../utils/fonts/font";
 
 
 //react responsive easy way of creating media queries
@@ -68,10 +69,10 @@ const StyledSection = styled.section`
 `
 
 const HeroText = styled.h1`
-  font-family: Raleway;
+  font-family: ${primaryFont};
   text-align: center;
   font-size: 4rem;
-  color: #242222;
+  color: ${titleTextColor};
   padding: 15px;
 `
 
@@ -84,7 +85,7 @@ const HeroDiv = styled.div`
 `
 
 const StyledQuote = styled.p`
-   font-family: Raleway;
+   font-family: ${primaryFont};
    font-weight: bolder;
    padding: 15px;
 `
@@ -101,7 +102,7 @@ const StyledButton = styled.button`
    color: white;
    border-radius: 5px;
    min-width: 15rem;
-   font-family: Raleway;
+   font-family: ${primaryFont};
    font-weight: bold;
    cursor: pointer;
 

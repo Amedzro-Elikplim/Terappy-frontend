@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { primaryFont } from "../../utils/fonts/font";
+import { titleTextColor } from "../../utils/color/Color";
 
 const AboutUs = () => {
     return(
@@ -8,7 +10,7 @@ const AboutUs = () => {
                 <AboutParagraph>We are a group of therapist, dedicating our time to provide help to individuals as far as mental health is concerned</AboutParagraph>
             </AboutUsText>
          
-           <Brain src={"/images/img2.png"} alt="brain" />
+           <AboutUsImage src={"/images/aboutImg.png"} alt="brain" />
         </AboutUsSection>
     )
 }
@@ -23,7 +25,7 @@ const AboutUsSection = styled.section`
    align-items: center;
 `
 
-const Brain = styled.img`
+const AboutUsImage = styled.img`
   height: 50vw;
   width: 60vw;
 `
@@ -34,13 +36,13 @@ const AboutUsText = styled.div`
 `
 
 const About = styled.h2`
-   font-family: Raleway;
-   color: #242222;
+   font-family: ${primaryFont};
+   color: ${titleTextColor};
    font-size: 3rem;
    padding: 1rem;
 `
 
 const AboutParagraph = styled.p`
-  font-family: Raleway;
+  font-family: ${primaryFont};
   font-weight: bolder;
 `

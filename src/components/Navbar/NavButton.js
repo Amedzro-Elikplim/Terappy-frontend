@@ -1,6 +1,8 @@
-
 import styled from "styled-components";
-import { primaryColor } from "../../utils/color/Color";
+import { primaryColor, navBg } from "../../utils/color/Color";
+import { secondaryFont } from "../../utils/fonts/font";
+
+
 const NavButton = ({className}) => {
     return(
         <StyledButton className={className}>Contact Us</StyledButton>
@@ -16,8 +18,8 @@ const StyledButton = styled.button`
      color: ${primaryColor};
      outline: none;
      box-shadow: 0px 0px 5px silver;
-     background-color: white;
-     font-family: Kurale;
+     background-color: ${navBg};
+     font-family: ${secondaryFont};
      font-size: large;
      border-radius: 5px;
      cursor: pointer;
