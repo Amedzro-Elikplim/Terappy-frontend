@@ -1,7 +1,11 @@
-# TERAPPY
-## Terappy is a platform where individuals with mental health issues can easily find therapist and other mental health professional. The user can find and book appointments with therapists. 
+## TERAPPY
+
+### Terappy is a platform where individuals with mental health issues can easily find therapist and other mental health professional. The user can find and book appointments with therapists. 
+
 ## Services
-### Addiction ### Depression ### Divorce
+
+###`Addiction` ###`Depression` ###`Divorce` ###`Suicidal thoughts` ###`Relationship` ###`Anxiety` ###`Stress`    
+
 ### Features of terappy
 1. A user can find and book appointments with therapist
 2. A user can join clubs tailored for their needs
