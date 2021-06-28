@@ -16,6 +16,4 @@ export default Blob;
 const StyledBlob = styled.svg`
  height: 40vh;
  width: 50%;
- 
-  
 `

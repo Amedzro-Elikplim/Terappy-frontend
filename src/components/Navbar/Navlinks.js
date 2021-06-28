@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { primaryColor } from '../../utils/color/Color';
+import { secondaryFont } from '../../utils/fonts/font';
 
 
 const Navlinks = ({className}) => {
@@ -20,7 +21,7 @@ const StyledUnorderedList = styled.ul`
     list-style-type: none;
     width: 50vw;
     justify-content: space-evenly;
-    font-family: Kurale;
+    font-family: ${secondaryFont};
 
 `
 

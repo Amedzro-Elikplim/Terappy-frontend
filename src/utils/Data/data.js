@@ -2,31 +2,15 @@ import { ImClubs } from 'react-icons/im';
 import { FaUser, FaHeart, FaPodcast, FaBlogger } from 'react-icons/fa'
 import { SiActigraph, SiJusteat, SiMonzo, } from 'react-icons/si'
 
-const data = [
-    {
-        title: "Depression"
-    },
-    {
-        title: "Relationship"
-    },
-    {
-        title: "Divorce"
-    },
-    {
-        title: "Addiction"
-    },
-    {
-        title: "Suicidal thoughts"
-    },
-    {
-        title: "Stress"
-    },
-    {
-        title: "Marriage"
-    },
-    {
-        title: "Anxiety"
-    }
+const servicesData = [
+    { title: "Depression" },
+    { title: "Relationship" },
+    { title: "Divorce" },
+    { title: "Addiction" },
+    { title: "Suicidal thoughts" },
+    { title: "Stress" },
+    { title: "Marriage" },
+    { title: "Anxiety"}
 ];
 
 const exploreData = [
@@ -38,10 +22,9 @@ const exploreData = [
     {icon: <FaHeart />, text: "Meet New People"},
     {icon: <FaPodcast />, text: "Listen to our podcasts" },
     {icon: <FaBlogger />, text: "Blog" },
-    // {text: "Join the gym"}
 ];
 
 export {
-    data,
+    servicesData,
     exploreData
 };

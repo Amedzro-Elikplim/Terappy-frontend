@@ -5,6 +5,7 @@ import Navlinks  from "./Navlinks"
 import styled from "styled-components";
 import { useMediaQuery } from "react-responsive";
 import {FcMenu} from 'react-icons/fc'
+import { navBg } from '../../utils/color/Color';
 
 
 
@@ -73,12 +74,14 @@ const StyledNav = styled.nav`
     height: 10vh;
     display: flex;
     margin: 0px;
+    //position: fixed;
     justify-content: space-between;
     padding: 15px 25px;
     box-shadow: 0px 0px 10px silver;
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
+    //background-color: ${navBg};
 `
 
 const NavDropdown = styled.div`
