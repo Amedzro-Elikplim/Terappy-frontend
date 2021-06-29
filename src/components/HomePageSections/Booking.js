@@ -44,7 +44,7 @@ const Text = styled.div`
 
 const Button = styled.button`
   min-width: 15vw;
-  padding: 9px;
+  padding: 14px;
   background-color: ${primaryColor};
   border: none;
   outline: none;
@@ -52,6 +52,7 @@ const Button = styled.button`
   margin: 20px;
   cursor: pointer;
   border-radius: 5px;
+
 
   &:hover {
     color: ${primaryColor};

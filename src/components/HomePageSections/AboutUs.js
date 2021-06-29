@@ -27,6 +27,7 @@ const AboutUsSection = styled.section`
    background-image: linear-gradient(aliceblue, white);
    display: flex;
    justify-content: space-evenly;
+   align-items: center;
 `
 
 const AboutUsImage = styled.img`
