@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { primaryFont } from '../../utils/fonts/font';
 import { SiTwitter, SiFacebook, SiInstagram, SiLinkedin, SiYoutubetv, SiWhatsapp, SiWorldhealthorganization } from 'react-icons/si';
-import { primaryColor } from '../../utils/color/Color';
+import { footerTopBgColor, primaryColor } from '../../utils/color/Color';
  
 const Footer = () => {
     return(
@@ -33,7 +33,7 @@ export default Footer;
 
 const StyledFooter = styled.footer`
   background-Image: url("images/Wave.svg");
-  background-color: rgb(94, 175, 247);
+  background-color: ${footerTopBgColor};
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

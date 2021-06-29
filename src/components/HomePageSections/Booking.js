@@ -8,7 +8,7 @@ const Booking = () => {
       <BookingDiv>
           <BookingBlob />
            <Text>
-             <h2>Need to talk with other specialists urgently???</h2>
+             <h1>Need to talk with other specialists urgently???</h1>
              <P>browse through our portal and find personnels available</P>
              <Button>BROWSE</Button>
            </Text>
@@ -24,17 +24,17 @@ const BookingDiv = styled.div`
  justify-content: space-evenly;
  flex-wrap: wrap;
  font-family: ${primaryFont};
- margin: 50px;
+ margin-top: 30px;
  margin-bottom: 50px;
- background-color: ${bookingBg};
+ background: ${bookingBg};
 `
  
 const Text = styled.div`
  display: flex;
  flex-direction: column;
- align-self: flex-start;
  align-items: center;
  justify-content: center;
+ text-align: center;
  flex: 1 1 300px;
  padding: 20px;
  background: url("images/bookbg.svg");
