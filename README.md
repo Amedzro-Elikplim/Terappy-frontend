@@ -4,7 +4,7 @@
 
 ## Services
 
-###`Addiction` ###`Depression` ###`Divorce` ###`Suicidal thoughts` ###`Relationship` ###`Anxiety` ###`Stress`    
+`Addiction` `Depression` `Divorce` `Suicidal thoughts` `Relationship` `Anxiety` `Stress`    
 
 ### Features of terappy
 1. A user can find and book appointments with therapist
