@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ServiceCard from "./ServiceCard";
-import { servicesData } from "../../utils/data/data";
+import { servicesData } from "../../utils/Data/data";
 
 const Services = () => {
    
