@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { MdExplore } from 'react-icons/md';
-import { exploreData } from '../../utils/data/data';
+import { exploreData } from '../../utils/Data/data';
 import ExploreCard from './ExploreCard';
 import { titleTextColor } from '../../utils/color/Color';
 import { primaryFont } from '../../utils/fonts/font';
