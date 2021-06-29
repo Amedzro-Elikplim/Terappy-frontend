@@ -12,7 +12,7 @@
 
 .footer {
   background-image:url(./utils/blobs/Wave.svg);
-  min-height: 200px;
+  min-height: 40vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
