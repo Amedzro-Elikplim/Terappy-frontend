@@ -8,7 +8,7 @@ const Booking = () => {
       <BookingDiv>
           <BookingBlob />
            <Text>
-             <h2>Need to talk with other specialists urgently??</h2>
+             <h2>Need to talk with other specialists urgently???</h2>
              <P>browse through our portal and find personnels available</P>
              <Button>BROWSE</Button>
            </Text>
