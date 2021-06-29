@@ -10,13 +10,6 @@
   grid-template-rows: minmax(10vh, auto);
 }
 
-.footer {
-  background-image:url(./utils/blobs/Wave.svg);
-  height: 40vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .menu-icon {
   zoom: 1.5;
   cursor: pointer;
@@ -35,5 +28,15 @@
 
 .explore-icon:hover {
   transform: rotate(50deg);
+}
+
+.social-icon {
+  cursor: pointer;
+  zoom: 1.5;
+}
+
+.social-icon:hover {
+  color: #984ff1;
+  transform: rotate(20deg);
 }
 

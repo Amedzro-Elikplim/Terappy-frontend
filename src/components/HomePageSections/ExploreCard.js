@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { blobSecondaryColor } from "../../utils/color/Color";
 
 
 const ExploreCard = (props) => {
@@ -25,7 +26,7 @@ const Card = styled.div`
    cursor: pointer;
 
    &:hover{
-       color: orangered;
+       color: ${blobSecondaryColor};
    }
 `
 

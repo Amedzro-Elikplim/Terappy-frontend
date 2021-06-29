@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { primaryFont } from '../../utils/fonts/font';
 import BookingBlob from '../../utils/blobs/BookingBlob';
-import { primaryColor } from '../../utils/color/Color';
+import { bookingBg, primaryColor } from '../../utils/color/Color';
 
 const Booking = () => {
     return (
@@ -24,8 +24,9 @@ const BookingDiv = styled.div`
  justify-content: space-evenly;
  flex-wrap: wrap;
  font-family: ${primaryFont};
- margin-top: 50px;
+ margin: 50px;
  margin-bottom: 50px;
+ background-color: ${bookingBg};
 `
  
 const Text = styled.div`
