@@ -90,8 +90,10 @@ const NavLinksDropdown = styled(Navlinks)`
 `
 
 const DropdownNavButton = styled(NavButton)`
-    margin: 10px 40px;
-    padding: 5px;
+   margin: 10px 40px;
+   width: 100px;
+   padding: 8px;
+    
 `
 
 

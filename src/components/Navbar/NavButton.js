@@ -3,11 +3,11 @@ import { primaryColor, navBg } from "../../utils/color/Color";
 import { primaryFont} from "../../utils/fonts/font";
 import { useHistory } from "react-router-dom";
 
-const NavButton = () => {
+const NavButton = ({className}) => {
     const history = useHistory();
 
     return(
-        <StyledButton onClick={() => history.push("/login")}>LOGIN</StyledButton>
+        <StyledButton className = {className} onClick={() => history.push("/login")}>LOGIN</StyledButton>
     )
 }
 
