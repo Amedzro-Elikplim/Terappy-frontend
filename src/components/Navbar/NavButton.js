@@ -14,7 +14,7 @@ const NavButton = ({className}) => {
 export default NavButton;
 
 const StyledButton = styled.button`
-     padding: 10px;
+     padding: 7px;
      min-width: 10vw;
      border: none;
      color: ${primaryColor};
