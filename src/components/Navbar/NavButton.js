@@ -1,25 +1,27 @@
 import styled from "styled-components";
 import { primaryColor, navBg } from "../../utils/color/Color";
-import { secondaryFont } from "../../utils/fonts/font";
+import { primaryFont} from "../../utils/fonts/font";
+import { useHistory } from "react-router-dom";
 
+const NavButton = () => {
+    const history = useHistory();
 
-const NavButton = ({className}) => {
     return(
-        <StyledButton className={className}>Contact Us</StyledButton>
+        <StyledButton onClick={() => history.push("/login")}>LOGIN</StyledButton>
     )
 }
 
 export default NavButton;
 
 const StyledButton = styled.button`
-     padding: 5px;
+     padding: 10px;
      min-width: 10vw;
      border: none;
      color: ${primaryColor};
      outline: none;
      box-shadow: 0px 0px 5px silver;
      background-color: ${navBg};
-     font-family: ${secondaryFont};
+     font-family: ${primaryFont};
      font-size: large;
      border-radius: 5px;
      cursor: pointer;

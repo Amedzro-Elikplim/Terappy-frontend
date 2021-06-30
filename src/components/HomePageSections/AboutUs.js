@@ -5,8 +5,9 @@ import { SiTwitter, SiFacebook, SiInstagram, SiLinkedin, SiYoutubetv } from 'rea
 
 const AboutUs = () => {
     return(
+        
         <AboutUsSection>
-            <AboutUsText>
+             <AboutUsText>
                 <About>About Us</About>
                  <AboutParagraph>
                   We are a group of health specialist, therapists, pschologist and many more dedicating our time to provide help to individuals 
@@ -23,10 +24,11 @@ const AboutUs = () => {
                     <SiYoutubetv className="social-icon" />
                      
                    </SocialIcons>
-            </AboutUsText>
+            </AboutUsText> 
          
-           <AboutUsImage src={"/images/aboutImg.png"} alt="Energy man" />
+           <AboutUsImage src={"/images/aboutImg.png"} alt="Energy man" /> 
         </AboutUsSection>
+        
     )
 }
 
@@ -41,17 +43,18 @@ const AboutUsSection = styled.section`
 `
 
 const AboutUsImage = styled.img`
-  height: 50vh;
-  width: 60vw;
   flex: 1 1 320px;
+  width: 50vw;
 `
 
 const AboutUsText = styled.div`
    display: flex;
    flex-direction: column;
    text-align: justify;
+   width: 50vw;
    padding: 20px;
    flex: 1 1 320px;
+
 `
 
 const About = styled.h2`

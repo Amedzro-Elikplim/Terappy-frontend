@@ -1,74 +1,40 @@
-import { useState } from "react";
-import styled from "styled-components";
-import NavButton from "../../components/Navbar/NavButton";
-//import axios from 'axios';
+ import styled from "styled-components";
+ import RegisterForm from "./RegisterForm";
+ import { useMediaQuery } from "react-responsive";
 
-const Register = (props) => {
-    const [state, setState] = useState({
-        state: {
-            first_name: "",
-            last_name: "",
-            email: "",
-            password: "",
-            confirm_password: ""
-        }
-    });
+const Register = () => {
 
-    const handleChange = (e) => {
-      const {name, value} = e.target;
+  const Desktop = ({children}) => {
+    const isDesktop = useMediaQuery({minWidth: 699});
+    return isDesktop ? children : null
+}
 
-      setState({...state, [name]: value});
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // const {first_name, last_name, email, password, confirm_password} = state;
-        // const data = {
-        //     first_name,
-        //     last_name,
-        //     email,
-        //     password,
-        //     confirm_password
-        // }
-        // axios.post("http://localhost:5000/api/register", data)
-        //      .then(response => {
-        //          if(response) {
-        //             alert("registration successful....test login page with the credentials");
-        //             props.history.push("/")
-        //          }
-              
-        //      })
-        //      .catch(err => {
-        //          console.log(err);
-        //          alert("check console for error message");
-        //      });
-    }
-
-
+const Mobile = ({children}) => {
+    const isMobile = useMediaQuery({maxWidth: 698});
+    return isMobile ? children : null
+}
 
     return(
-        <ParentDiv>
-            <form onSubmit={handleSubmit}>
+      <div>
+        <Mobile>
+          <RegisterFormMobile>
+            <RegisterForm />
+          </RegisterFormMobile>
+        </Mobile>
 
-                <Card>
-                    <RegisterText>Register</RegisterText>
-                    <Divider/>
-                    <FirstName name="first_name" onChange={handleChange} value={state.first_name || ""} type="text" placeholder="First Name" />
-                    <LastName name="last_name" onChange={handleChange} value={state.last_name || ""} type="text" placeholder="Last Name" />
-                    <Email name="email" onChange={handleChange} value={state.email || ""} type="email" placeholder="Email" />
-                    <Password name="password" onChange={handleChange} type="password" placeholder="Password" value={state.password || ""} />
-                    <ConfirmPassword name="confirm_password" onChange={handleChange} value={state.confirm_password || ""} type="password" placeholder="Confirm password" />
-                    <NavButton type="submit" children={"Register"} />
-                </Card>
-
-            </form>
-        </ParentDiv>
+        <Desktop>
+           <RegisterFormDesktop>
+             <Div></Div>
+             <DesktopRegisterForm />
+           </RegisterFormDesktop>
+        </Desktop>
+      </div>
     )
 }
 
 export default Register;
 
-const ParentDiv = styled.div`
+const RegisterFormMobile = styled.div`
   text-align: center;
   display: flex;
   justify-content: center;
@@ -76,72 +42,27 @@ const ParentDiv = styled.div`
   height: 100vh;
 `
 
-const Card = styled.div`
-  height: 60vh;
-  width: 40vw;
-  border: none;
-  outline: none;
-  box-shadow: 0px 0px 10px silver;
+const RegisterFormDesktop = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `
 
-const Divider = styled.hr`
-   margin: 20px;
-   background-color: #cccecf;
-   height: 1px;
-   width: 20vw;
-   border: none;
+const DesktopRegisterForm = styled(RegisterForm)`
+      width: 35vw;
+      height: 100vh;
+      flex-grow: 1;
+      flex-shrink: 1;
+      background-image: url("images/bookbg.svg");
+      background-repeat: no-repeat;
 `
 
-const RegisterText = styled.h3`
-    font-family: Raleway;
-    font-size: 2rem;
-    color: #18191a;
+const Div = styled.div`
+  width: 65vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-image: url("images/Waiau.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 `
 
-const FirstName = styled.input`
-  width: 70%;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 0px 5px silver;
-`
-
-const LastName = styled.input`
-  width: 70%;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 0px 5px silver;
-`
-
-const Email = styled.input`
-  width: 70%;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 0px 5px silver;
-`
-const Password = styled.input`
-  width: 70%;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 0px 5px silver;
-`
-
-const ConfirmPassword = styled.input`
-  width: 70%;
-  padding: 10px;
-  margin: 10px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 0px 5px silver;
-`
+ 
