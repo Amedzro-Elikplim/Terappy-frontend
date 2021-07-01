@@ -52,7 +52,7 @@ const Nav = () => {
         
         <Mobile>
             {state.dropMenu ?
-               <NavDropdown>
+               <NavDropdown data-aos="fade-right" data-aos-duration="500">
                    <NavLinksDropdown />
                    <DropdownNavButton />
                </NavDropdown>

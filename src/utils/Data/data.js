@@ -4,12 +4,12 @@ import { SiActigraph, SiJusteat, SiMonzo, } from 'react-icons/si'
 
 const servicesData = [
     { title: "Depression" },
-    { title: "Relationship" },
+    { title: "Abusive relationship" },
     { title: "Divorce" },
-    { title: "Addiction" },
+    { title: "Pornography Addiction" },
     { title: "Suicidal thoughts" },
     { title: "Stress" },
-    { title: "Marriage" },
+    { title: "Marital problems" },
     { title: "Anxiety"}
 ];
 

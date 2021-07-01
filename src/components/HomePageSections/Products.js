@@ -9,7 +9,7 @@ const Products = () => {
 
 
     return(
-        <ExploreSection>
+        <ExploreSection id="explore">
             
             <ExploreSectionTitle>Explore <MdExplore className="explore-icon" /></ExploreSectionTitle>
 

@@ -2,11 +2,22 @@ import styled from 'styled-components';
 import { primaryFont } from '../../utils/fonts/font';
 import { SiTwitter, SiFacebook, SiInstagram, SiLinkedin, SiYoutubetv, SiWhatsapp, SiWorldhealthorganization } from 'react-icons/si';
 import { footerTopBgColor, primaryColor } from '../../utils/color/Color';
- 
+import { BiArrowToTop } from 'react-icons/bi';
+import { animateScroll as scroll  } from 'react-scroll';
+
+
 const Footer = () => {
+
+    const scrollToTop = () => {
+       scroll.scrollToTop()
+    }
+
     return(
         <StyledFooter>
-            <FooterDiv>
+            <div>
+              <BiArrowToTop className="backToTop" onClick={() => scrollToTop()}/>
+            </div>
+            <FooterDiv data-aos="fade-up" data-aos-duration="500">
                 <H3>Social Media</H3>
                 <P>facebook <SiFacebook /> </P>
                 <P>twitter <SiTwitter /> </P>
@@ -14,8 +25,9 @@ const Footer = () => {
                 <P>Linkedin <SiLinkedin/> </P>
                 <P>facebook <SiFacebook /> </P>
                 <P>Youtube <SiYoutubetv/> </P>
+                
             </FooterDiv>
-            <FooterDiv>
+            <FooterDiv data-aos="fade-up" data-aos-duration="500">
                 <H3>Terappy @2021</H3>
                 <P>Accra, Central. Blue Crest Apartment</P>
                 <P>Opposite, Ministry of Finance</P>
@@ -56,7 +68,7 @@ const H3 = styled.h3`
 `
 
 const P = styled.p`
- padding: 1px;
+ padding: 2px;
  cursor: pointer;
 
  &:hover {

@@ -5,7 +5,7 @@ import { servicesFontColor } from "../../utils/color/Color";
 const ServiceCard = (props) => {
 
     return(
-        <Card>
+        <Card data-aos="fade-up" data-aos-duration="500">
             <Title>{props.title}</Title>
         </Card>
     )

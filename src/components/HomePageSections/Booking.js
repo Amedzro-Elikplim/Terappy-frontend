@@ -7,8 +7,8 @@ const Booking = () => {
     return (
       <BookingDiv>
           <BookingBlob />
-           <Text>
-             <h1>Need to talk with other specialists urgently???</h1>
+           <Text data-aos="fade-right" data-aos-offset="100" data-aos-duration="500">
+             <h1>Begin your recovery journey with our therapist today!!!</h1>
              <P>browse through our portal and find personnels available</P>
              <Button>BROWSE</Button>
            </Text>

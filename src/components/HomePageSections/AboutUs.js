@@ -5,7 +5,7 @@ import { SiTwitter, SiFacebook, SiInstagram, SiLinkedin, SiYoutubetv } from 'rea
 
 const AboutUs = () => {
     return(
-        <AboutUsSection>
+        <AboutUsSection id="about">
             <AboutUsText>
                 <About>About Us</About>
                  <AboutParagraph>
@@ -15,7 +15,7 @@ const AboutUs = () => {
                   positions clients in the right physical state to complete their recovery journey
                   </AboutParagraph>
 
-                   <SocialIcons>
+                   <SocialIcons data-aos="fade-right" data-aos-duration="500">
                     <SiTwitter className="social-icon" />
                     <SiFacebook className="social-icon" />
                     <SiInstagram className="social-icon" />
@@ -24,7 +24,7 @@ const AboutUs = () => {
                    </SocialIcons>
             </AboutUsText>
          
-           <AboutUsImage src={"/images/aboutImg.png"} alt="Energy man" />
+           <AboutUsImage src={"/images/aboutImg.png"} alt="Energy man" data-aos="zoom-in-down" data-aos-duration="1000"/>
         </AboutUsSection>
     )
 }

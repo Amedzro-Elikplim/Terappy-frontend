@@ -5,7 +5,7 @@ import { blobSecondaryColor } from "../../utils/color/Color";
 const ExploreCard = (props) => {
 
     return(
-        <Card>
+        <Card data-aos="zoom-out" data-aos-duration="500">
          <Icon>{props.icon}</Icon>
          <Text>{props.text}</Text>
         </Card>

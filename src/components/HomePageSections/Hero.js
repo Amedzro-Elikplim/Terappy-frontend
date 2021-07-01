@@ -20,11 +20,11 @@ const Mobile = ({children}) => {
 const Hero = () => {
 
     return(
-        <StyledSection>
+        <StyledSection id="home">
             {/**section wrapped with Desktop tag will display only on desktop screens */}
             {/**start */}
             <Desktop>
-            <HeroDiv>
+            <HeroDiv data-aos="zoom-in" data-aos-duration="2000">
                 <HeroText>Ohh...so you think life Sucks??</HeroText>
                 <StyledQuote>
                     <q>Remember sadness is always temporary, this, too shall, pass....</q>

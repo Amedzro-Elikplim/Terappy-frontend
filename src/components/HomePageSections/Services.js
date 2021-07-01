@@ -6,7 +6,7 @@ const Services = () => {
    
     return(
         <div>
-            <ServicesSection>
+            <ServicesSection id="services">
                 {
                     servicesData.map((item, key) => {
                     return  <ServiceCard key={key} title={item.title} />

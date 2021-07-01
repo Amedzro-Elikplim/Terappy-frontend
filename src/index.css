@@ -40,3 +40,12 @@
   transform: rotate(20deg);
 }
 
+
+.backToTop {
+  position: absolute;
+  left: 0px;
+  zoom: 2;
+  background-color: #984ff1;
+  border: none;
+  min-width: 2vw;
+}
