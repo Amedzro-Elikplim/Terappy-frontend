@@ -72,6 +72,7 @@ const StyledNav = styled.nav`
     display: flex;
     height: 10vh;
     margin: 0px;
+    height: 10vh;
     justify-content: space-between;
     padding: 15px 25px;
     box-shadow: 0px 0px 10px silver;
