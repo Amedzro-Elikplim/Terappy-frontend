@@ -48,4 +48,10 @@
   background-color: #984ff1;
   border: none;
   min-width: 2vw;
+  cursor: pointer;
+}
+
+.backToTop:hover {
+  transform: rotate(2deg);
+  box-shadow: 0px 0px 10px rgb(87, 86, 86);
 }
