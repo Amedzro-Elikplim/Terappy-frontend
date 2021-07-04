@@ -1,10 +1,13 @@
 import { useState } from "react";
 import styled from 'styled-components';
-import { primaryColor, titleTextColor } from "../../utils/color/Color";
+import { primaryColor } from "../../utils/color/Color";
 import { primaryFont } from "../../utils/fonts/font";
+import axios from 'axios';
+import { useHistory } from "react-router-dom";
 
 const RegisterForm = ({className}) => {
 
+  const history = useHistory();
 
     const [state, setState] = useState({
         state: {
@@ -32,19 +35,14 @@ const RegisterForm = ({className}) => {
             password,
             confirm_password
         }
-        console.log(data)
-        // axios.post("http://localhost:5000/api/register", data)
-        //      .then(response => {
-        //          if(response) {
-        //             alert("registration successful....test login page with the credentials");
-        //             props.history.push("/")
-        //          }
-              
-        //      })
-        //      .catch(err => {
-        //          console.log(err);
-        //          alert("check console for error message");
-        //      });
+        axios.post("http://localhost:5000/api/register", data)
+             .then(response => {
+                   history.push("/dashboard");
+                   console.log(response);
+             })
+             .catch(err => {
+                 console.log(err.response);
+             });
     }
 
     return(
@@ -173,6 +171,6 @@ const Button = styled.button`
   font-family: ${primaryFont};
 
   &:hover {
-    box-shadow: 5px 10px 20px ${titleTextColor};
+    box-shadow: 5px 10px 20px silver;
   }
 `

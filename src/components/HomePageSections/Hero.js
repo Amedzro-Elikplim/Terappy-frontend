@@ -4,6 +4,7 @@ import { primaryColor, titleTextColor } from "../../utils/color/Color";
 import { useMediaQuery } from "react-responsive";
 import { FiPhoneCall } from 'react-icons/fi';
 import { primaryFont } from "../../utils/fonts/font";
+import { useHistory } from "react-router-dom";
 
 
 //react responsive easy way of creating media queries
@@ -19,6 +20,8 @@ const Mobile = ({children}) => {
 
 const Hero = () => {
 
+    const history = useHistory();
+
     return(
         <StyledSection id="home">
             {/**section wrapped with Desktop tag will display only on desktop screens */}
@@ -30,7 +33,7 @@ const Hero = () => {
                     <q>Remember sadness is always temporary, this, too shall, pass....</q>
                 </StyledQuote>
 
-                <StyledButton>
+                <StyledButton onClick={() => history.push("/login")}>
                    <FiPhoneCall className="phone-icon" />  TALK TO A THERAPIST
                 </StyledButton>
 

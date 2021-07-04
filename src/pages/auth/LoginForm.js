@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import { primaryColor, titleTextColor } from '../../utils/color/Color';
+import { primaryColor, titleTextColor, blobSecondaryColor } from '../../utils/color/Color';
 import { primaryFont } from '../../utils/fonts/font';
+import axios from 'axios';
+
 
 const LoginForm = ({className}) => {
-
+  
   const history = useHistory();
 
     const [state, setState] = useState({
@@ -28,29 +30,41 @@ const LoginForm = ({className}) => {
           password
         }
 
-        console.log(data)
-  
-        
-  
-        // axios.post("http://localhost:5000/api/login", data)
-        //      .then(response => {
-        //        if(response) props.history.push("/home")
-        //      })
-        //      .catch(err => {
-        //        console.log(err);
-        //        alert("check console for error message");
-        //      });
+        axios.post("http://localhost:5000/api/login", data)
+             .then(response => {
+               history.push("/dashboard");
+               console.log(response)
+             })
+             .catch(err => {
+               console.log(err.response);
+             });
       }
-    return(
-      <Card className={className} onSubmit = {handleSubmit}>  
-            <LoginText>Login</LoginText>
-            <Divider/>
-            <Email name="email" onChange={handleChange} value = {state.email || ""} type="email" placeholder="Email" />
-            <Password name="password" onChange={handleChange} value={state.password || ""} type="password" placeholder="Password" />
-            <Button type="submit">LOGIN</Button>
-            <P onClick={() => history.push("/register")}><em>You do not have an account? Register here</em></P>
+    return (
+      <Card className={className} onSubmit={handleSubmit}>
+        <LoginText>Login</LoginText>
+        <Divider />
+        <Email
+          name="email"
+          onChange={handleChange}
+          value={state.email || ""}
+          type="email"
+          placeholder="Email"
+        />
+        <Password
+          name="password"
+          onChange={handleChange}
+          value={state.password || ""}
+          type="password"
+          placeholder="Password"
+        />
+        <Button type="submit">LOGIN</Button>
+        <P onClick={() => history.push("/register")}>
+          <em>
+            You do not have an account? <Span>Register here</Span>
+          </em>
+        </P>
       </Card>
-    )
+    );
 }
 
 export default LoginForm;
@@ -123,15 +137,16 @@ const Button = styled.button`
   font-family: ${primaryFont};
 
   &:hover {
-    box-shadow: 5px 10px 20px ${titleTextColor};
+    box-shadow: 5px 10px 20px silver;
   }
 `
 const P = styled.p`
 color: ${titleTextColor};
-cursor: pointer;
 font-family: ${primaryFont};
+`
 
-&:hover {
-  color: ${primaryColor};
-}
+const Span = styled.span`
+  font-weight: bolder;
+  color: ${blobSecondaryColor};
+  cursor: pointer;
 `
