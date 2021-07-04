@@ -9,7 +9,7 @@ import {FcMenu} from 'react-icons/fc'
 
 
 const Nav = () => {
-
+   
     const [state, setState] = useState({
         state : {
             dropMenu: false
@@ -70,11 +70,10 @@ export default Nav;
 
 const StyledNav = styled.nav`
     display: flex;
-    height: 10vh;
     margin: 0px;
-    height: 10vh;
+    height: 9vh;
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 0px 25px;
     box-shadow: 0px 0px 10px silver;
     align-items: center;
     flex-wrap: nowrap;

@@ -14,9 +14,9 @@ const Footer = () => {
 
     return(
         <StyledFooter>
-            <div>
+             
               <BiArrowToTop className="backToTop" onClick={() => scrollToTop()}/>
-            </div>
+            
             <FooterDiv data-aos="fade-up" data-aos-duration="500">
                 <H3>Social Media</H3>
                 <P>facebook <SiFacebook /> </P>
@@ -25,7 +25,6 @@ const Footer = () => {
                 <P>Linkedin <SiLinkedin/> </P>
                 <P>facebook <SiFacebook /> </P>
                 <P>Youtube <SiYoutubetv/> </P>
-                
             </FooterDiv>
             <FooterDiv data-aos="fade-up" data-aos-duration="500">
                 <H3>Terappy @2021</H3>
@@ -51,7 +50,6 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-wrap: wrap;
   color: white;
-  justify-content: space-evenly;
   font-family: ${primaryFont};
   font-size: small;
 `

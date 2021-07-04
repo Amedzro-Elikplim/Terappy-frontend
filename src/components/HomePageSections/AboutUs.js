@@ -9,10 +9,10 @@ const AboutUs = () => {
             <AboutUsText>
                 <About>About Us</About>
                  <AboutParagraph>
-                  We are a group of health specialist, therapists, pschologist and many more dedicating our time to provide help to individuals 
-                  as far as mental health is concerned. We special in helping individuals overcome anxiety, stress, depression, sucidal thoughts, addictions (alcohol, pornography etc)
+                  We are a group of health specialist, therapists, psychologist and many more dedicating our time to provide help to individuals 
+                  as far as mental health is concerned. We specialize in helping individuals overcome anxiety, stress, depression, sucidal thoughts, addictions (alcohol, pornography etc)
                   to recover. As it is said a healthy mind lives in a healthy body, we provide other services that
-                  positions clients in the right physical state to complete their recovery journey
+                  positions clients in the right physical and mental state to complete their recovery journey
                   </AboutParagraph>
 
                    <SocialIcons data-aos="fade-right" data-aos-duration="500">

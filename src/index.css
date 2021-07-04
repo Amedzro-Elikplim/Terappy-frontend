@@ -7,7 +7,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: minmax(10vh, auto);
+  grid-template-rows: minmax(9vh, auto);
 }
 
 .menu-icon {
@@ -42,8 +42,9 @@
 
 
 .backToTop {
-  position: absolute;
-  left: 0px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
   zoom: 2;
   background-color: #984ff1;
   border: none;
@@ -52,6 +53,5 @@
 }
 
 .backToTop:hover {
-  transform: rotate(2deg);
-  box-shadow: 0px 0px 10px rgb(87, 86, 86);
+  box-shadow: 15px 0px 5px rgb(241, 38, 72) inset;
 }
