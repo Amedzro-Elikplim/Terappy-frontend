@@ -7,23 +7,22 @@ const NavButton = ({className}) => {
     const history = useHistory();
 
     return(
-        <StyledButton className = {className} onClick={() => history.push("/login")}>LOGIN</StyledButton>
+        <StyledButton className = {className} onClick={() => history.push("/login")}>Get Started</StyledButton>
     )
 }
 
 export default NavButton;
 
 const StyledButton = styled.button`
-     padding: 7px;
+     padding: 10px;
      min-width: 10vw;
      border: none;
-     color: ${primaryColor};
+     color: ${navBg};
      outline: none;
      box-shadow: 0px 0px 5px silver;
-     background-color: ${navBg};
+     background-color: ${primaryColor};
      font-family: ${primaryFont};
-     font-size: large;
-     border-radius: 5px;
+     font-size: 15px;
      cursor: pointer;
      font-weight: bolder;
 

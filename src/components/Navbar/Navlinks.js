@@ -4,14 +4,25 @@ import { secondaryFont } from '../../utils/fonts/font';
 import { Link } from 'react-scroll';
 
 const Navlinks = ({className}) => {
-    return(
-        <StyledUnorderedList className={className}>
-            <Link to="home" spy smooth><Links>Home</Links></Link>
-            <Link to="services" spy smooth><Links>Services</Links></Link> 
-            <Link to="explore" spy smooth><Links>Explore</Links></Link> 
-            <Link to="about" spy smooth><Links>About Us</Links></Link> 
-        </StyledUnorderedList>
-    )
+    return (
+      <StyledUnorderedList className={className}>
+        <Link to="home" spy smooth>
+          <Links>Home</Links>
+        </Link>
+        <Link to="services" spy smooth>
+          <Links>Services</Links>
+        </Link>
+        <Link to="explore" spy smooth>
+          <Links>Explore</Links>
+        </Link>
+        <Link to="explore" spy smooth>
+          <Links>For therapists</Links>
+        </Link>
+        <Link to="about" spy smooth>
+          <Links>About Us</Links>
+        </Link>
+      </StyledUnorderedList>
+    );
 }
 
 export default Navlinks;
