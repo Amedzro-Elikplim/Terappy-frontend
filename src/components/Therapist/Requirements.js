@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function Requirements() {
     return (
-        <ParentDiv>requirements</ParentDiv>
+        <ParentDiv></ParentDiv>
     )
 }
 
