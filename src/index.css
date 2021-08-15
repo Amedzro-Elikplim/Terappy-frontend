@@ -3,11 +3,10 @@
   margin: 0;
   padding: 0;
 }
- 
 
 .container {
   display: grid;
-  grid-template-rows: minmax(9vh, auto);
+  grid-template-rows: minmax(12vh, auto);
 }
 
 .menu-icon {
@@ -19,7 +18,7 @@
 .phone-icon {
   zoom: 2;
 }
- 
+
 .explore-icon {
   color: #380675;
   margin: 0px 10px;
@@ -40,7 +39,6 @@
   transform: rotate(20deg);
 }
 
-
 .backToTop {
   position: fixed;
   bottom: 0px;
@@ -56,7 +54,7 @@
   box-shadow: 15px 0px 5px rgb(241, 38, 72) inset;
 }
 
-.construct-icon {
-  zoom: 6;
-  color: #380675;
+.therapist-icon {
+  zoom: 3;
+  color: rgb(241, 38, 72);
 }

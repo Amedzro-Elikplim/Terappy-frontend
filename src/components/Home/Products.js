@@ -42,7 +42,6 @@ const ExploreSectionTitle = styled.div`
 `
 
 const ExploreDiv = styled.div`
-  display: flex;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;

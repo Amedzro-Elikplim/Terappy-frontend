@@ -71,7 +71,7 @@ export default Nav;
 const StyledNav = styled.nav`
     display: flex;
     margin: 0px;
-    height: 9vh;
+    height: 12vh;
     justify-content: space-between;
     padding: 0px 25px;
     box-shadow: 0px 0px 10px silver;

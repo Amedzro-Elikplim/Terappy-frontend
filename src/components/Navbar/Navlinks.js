@@ -2,8 +2,13 @@ import styled from 'styled-components';
 import { primaryColor } from '../../utils/color/Color';
 import { secondaryFont } from '../../utils/fonts/font';
 import { Link } from 'react-scroll';
+import { useHistory } from 'react-router';
 
-const Navlinks = ({className}) => {
+
+const Navlinks = ({ className }) => {
+  const history = useHistory();
+
+
     return (
       <StyledUnorderedList className={className}>
         <Link to="home" spy smooth>
@@ -15,12 +20,10 @@ const Navlinks = ({className}) => {
         <Link to="explore" spy smooth>
           <Links>Explore</Links>
         </Link>
-        <Link to="explore" spy smooth>
-          <Links>For therapists</Links>
-        </Link>
         <Link to="about" spy smooth>
           <Links>About Us</Links>
         </Link>
+        <Links onClick={() => history.push("/therapist")}>For therapist</Links>
       </StyledUnorderedList>
     );
 }

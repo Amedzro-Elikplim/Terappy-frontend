@@ -15,7 +15,7 @@ const servicesData = [
 
 const exploreData = [
     {icon: <ImClubs />, text: "Become a club member" },
-    {icon: <SiActigraph />, text: "Join our gym"},
+    {icon: <SiActigraph />, text: "Join our yoga club"},
     {icon: <SiJusteat />, text: "Eat Healthy shop" },
     {icon: <SiMonzo />, text: "Tour our marketplace" },
     {icon: <FaUser />, text: "Volunteer" },
