@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import { primaryColor } from '../../utils/color/Color';
 import { secondaryFont } from '../../utils/fonts/font';
 import { Link } from 'react-scroll';
-import { useHistory } from 'react-router';
+import { Link as RLink } from "react-router-dom";
 
 
 const Navlinks = ({ className }) => {
-  const history = useHistory();
+
 
 
     return (
@@ -23,12 +23,23 @@ const Navlinks = ({ className }) => {
         <Link to="about" spy smooth>
           <Links>About Us</Links>
         </Link>
-        <Links onClick={() => history.push("/therapist")}>For therapist</Links>
+        <RouterLink to="/therapist" target="_blank">For therapist</RouterLink>
       </StyledUnorderedList>
     );
 }
 
 export default Navlinks;
+
+const RouterLink = styled(RLink)`
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px;
+  color: black;
+
+  &:hover {
+    color: ${primaryColor};
+  }
+`;
 
 const StyledUnorderedList = styled.ul`
     display: flex;
