@@ -23,7 +23,7 @@ const Navlinks = ({ className }) => {
         <Link to="about" spy smooth>
           <Links>About Us</Links>
         </Link>
-        <RouterLink to="/therapist" target="_blank">For therapist</RouterLink>
+        <RouterLink to="/therapist">For therapist</RouterLink>
       </StyledUnorderedList>
     );
 }
