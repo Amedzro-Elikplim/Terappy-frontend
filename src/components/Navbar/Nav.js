@@ -33,8 +33,6 @@ const Nav = () => {
     }
  
 
-
-
     return(
         <div>
         <StyledNav>
